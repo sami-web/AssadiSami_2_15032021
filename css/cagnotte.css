@@ -9,10 +9,12 @@
     }
     .bg-color {
         margin-top: 15px;
+        float: none;
     }
     .second-img-container,
     .img-container {
         text-align: center;
+        float: none;
     }
     .filter li {
         float: none;
@@ -24,6 +26,11 @@
 /*Medium devices (tablets, 768px and up)*/
 
 @media (max-width: 768px) {
+    .big.width-25.pull-left,
+    .deux_photo.width-25.pull-left {
+        width: 100%;
+        float: none;
+    }
     input#recherche {
         width: 60%;
     }
@@ -37,6 +44,11 @@
         float: none;
         margin: 20px auto;
     }
+    .item ul.star {
+        position: relative;
+        left: 0%
+    }
+    .second-img-container .content,
     div#Filtes p:first-child {
         width: 100%;
         display: block;
@@ -51,6 +63,17 @@
     }
     #banniere_input .show-mobile {
         display: inline-block;
+    }
+    .second-img-container .img-content {
+        width: 100%;
+        float: none;
+    }
+    .second-img-container .item {
+        width: 100%;
+        min-height: 240px;
+    }
+    .second-img-container .item img {
+        border-radius: 25px;
     }
 }
 
